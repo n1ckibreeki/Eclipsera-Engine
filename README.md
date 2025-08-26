@@ -1,4 +1,4 @@
-# LunarEngine (demo)
+# Eclipsera Engine (Modification of LunarEngine) (STILL WIP, I'll update it later)
 <div style="display:flex; align-items:center; gap:20px; margin:10px 0;">
   <a href="https://discord.gg/N66awhg7" style="text-decoration:none;">
     <img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge" alt="Discord"/>
@@ -24,7 +24,7 @@
 <img src="repo/example6.gif" alt="Demo gif" width="256"/>
 
 ### What is Lunar Engine?
-**LunarEngine** (formerly **Librebox**) is an open-source game engine powered by Luau. It delivers a sandbox-style API and development model inspired by popular sandbox engines, so existing Luau code runs with minimal changes.
+**EclipseraEngine** (Modifcaiton of **LunarEngine**) is an open-source game engine powered by Luau. It delivers a sandbox-style API and development model inspired by popular sandbox engines, so existing Luau code runs with minimal changes.
 
 ### Why Lunar?
 Lunar gives developers full agency over their games - from the code to the engine. Build immersive experiences with a familiar interface while maintaining complete ownership of your platform.
