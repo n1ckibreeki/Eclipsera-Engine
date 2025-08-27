@@ -1,15 +1,18 @@
 # Eclipsera Engine
-This is a modification of LunarEngine which aimming add thing that current project doesn't have.
-This modification still early, and still working in progression.
+Eclipsera Engine is a modified version of LunarEngine, designed to include features that the original project currently lacks. This engine is built using ROBLOX LuaU and aims to support the full range of Roblox APIs for game development.
 
-# Is Eclipsera Engine Open-Source?
-- Yes, We're modification of LunarEngine So it's open-source for all to use! :steam_happy:
-
-## CURRENT FEATURES
-- Seperated Shaders
-- Early GLSL(Shader) Support Left over in the file (i don't know that i already delete it now or not idk..)
-- UserInputService Support
-- Performance Tweaking, Low End Friendly
-
-## ROAD-MAP
-- i didn't plan yet, i did this for fun actually, because i do nothing while at work, so i red c++ book and it led me here lol
+The project is still in its early stages and actively under development.
+## Is Eclipsera Engine Open Source?
+Yes. Since this is a modification of the open-source LunarEngine, Eclipsera Engine is also open source and freely available for everyone to use.
+## Current Features
+- Separated shader files: `shaders/shaders.h` and `shaders/sky.h` have been split from `Renderer.cpp` for better organization.
+- Basic support for the Roblox API, including `UserInputService` (that only service that LunarEngine doesn't have it rn, be patience, i will add more but might take a time, i'm no expert at cpp language lol)
+- Early-stage support for GLSL shaders.
+- Performance improvements: fixed a crash issue in the Lua scheduler that occurred when loading large LuaU files.
+  (Note: creating over 100,000 instances at once still causes crashes. this is currently a work in progress.)
+## Roadmap
+- Add a new instance/class called `Skybox`.
+- Provide full GLSL shader support, along with legacy/basic post-processing options that can be used in the `LightingService` without requiring prior knowledge of GLSL.
+- Implement an ImGUI-based debugging tool to support development. This will include access to an Explorer panel, Properties, memory usage stats, and hardware information.
+- Rewrite LunarEngine’s ambient occlusion system using a modern technique, with customizable settings available through the `LightingService`.
+- Improve camera controls: transition from keyboard arrow-based control to a more standard right mouse button handler.
