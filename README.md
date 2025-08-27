@@ -2,8 +2,16 @@
 Eclipsera Engine is a modified version of LunarEngine, designed to include features that the original project currently lacks. This engine is built using ROBLOX LuaU and aims to support the full range of Roblox APIs for game development.
 
 The project is still in its early stages and actively under development.
+
 ## Is Eclipsera Engine Open Source?
 Yes. Since this is a modification of the open-source LunarEngine, Eclipsera Engine is also open source and freely available for everyone to use.
+
+## How can i reported bug? Or give feedback?
+You can report any suspected bugs in the Issues section.
+https://github.com/n1ckibreeki/Eclipsera-Engine/issues
+
+For general feedback or suggestions, it is best to leave them in the Discussions tab.
+https://github.com/n1ckibreeki/Eclipsera-Engine/discussions
 
 ---
 
@@ -44,7 +52,7 @@ The Lighting service is partially implemented, supporting real-time ambient and 
   - `Lighting.ClockTime` - simulates in-game time of day
   - `Lighting.Brightness` - controls scene brightness
 These can be dynamically changed at runtime and affect all visible objects.
-## RunService & Render Pipeline
+### RunService & Render Pipeline
 Full support for the five standard RunService stages: `RenderStepped`, `Heartbeat`, `Stepped`, etc.
 Allows connections and waits:
 ```lua
