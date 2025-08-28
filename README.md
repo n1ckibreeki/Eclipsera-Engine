@@ -3,8 +3,8 @@ Eclipsera Engine is a modified version of LunarEngine, designed to include featu
 
 The project is still in its early stages and actively under development.
 
-## Is Eclipsera Engine Open Source?
-Yes. Since this is a modification of the open-source LunarEngine, Eclipsera Engine is also open source and freely available for everyone to use.
+# ❓ Got Question?
+If you got any questions, Feel free to leave it in Discussions! or find your question in this section! - https://github.com/n1ckibreeki/Eclipsera-Engine/wiki/%E2%9D%93-FAQ---Frequently-Asked-Questions
 
 ## How can i reported bug? Or give feedback?
 You can report any suspected bugs in the Issues section.
