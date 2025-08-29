@@ -4,7 +4,7 @@
 Eclipsera Engine is a modified version of [LunarEngine](https://github.com/lunarengine/lunar-test), designed to include features that the original project currently lacks. This engine is built using ROBLOX's Luau and aims to support the full range of Roblox APIs for game development. and Freedom of Game Development
 
 ## **PRONOUNCIATION**
-E-CLIP_SERA EN-GINE
+E-CLIP-SERA EN-GINE, E-CRIP-SERA EN-JIN, E-KRIP-SERRAH EN-JEAN, Yī-kè-lǐ-pǔ-sī-lā Ān-jīn, 伊克利普斯拉 安金
 
 > [!NOTE]
 > The project is still in its early stages and actively under development.
