@@ -4,18 +4,19 @@ Eclipsera Engine is a modified version of LunarEngine, designed to include featu
 The project is still in its early stages and actively under development.
 
 # ❓ Got Question?
-If you got any questions, Feel free to leave it in Discussions! or find your question in this section! - https://github.com/n1ckibreeki/Eclipsera-Engine/wiki/%E2%9D%93-FAQ---Frequently-Asked-Questions
+If you got any questions, Feel free to leave it in Discussions! or find your question in this section!
+- https://github.com/n1ckibreeki/Eclipsera-Engine/wiki/#❓-FAQ---Frequently-Asked-Questions
 
 ## How can i reported bug? Or give feedback?
-You can report any suspected bugs in the Issues section.
-https://github.com/n1ckibreeki/Eclipsera-Engine/issues
-
-For general feedback or suggestions, it is best to leave them in the Discussions tab.
-https://github.com/n1ckibreeki/Eclipsera-Engine/discussions
+- You can report any suspected bugs in the Issues section.
+  - https://github.com/n1ckibreeki/Eclipsera-Engine/issues
+- For general feedback or suggestions, it is best to leave them in the Discussions tab.
+  - https://github.com/n1ckibreeki/Eclipsera-Engine/discussions
 
 ---
 ## SERVICE AVAILABILITY
-https://github.com/n1ckibreeki/Eclipsera-Engine/wiki/%E2%9A%99-Services-Status
+This section provides an overview of which services are currently available in the engine and which ones are still under development or planned for the future. It is intended to help developers understand the current state of the engine's features and make informed decisions when building projects. For a detailed, up-to-date status of each service, please refer to the full list here
+- https://github.com/n1ckibreeki/Eclipsera-Engine/wiki/⚙-Services-Status
 
 ## Compatibility
 Eclipsera Engine is currently in its demo phase as LunarEngine, implementing a limited but functional subset of its intended API. While it's not feature-complete, it already supports a wide range of basic engine functionality enough to begin experimenting with rendering, scripting, and basic scene construction.
