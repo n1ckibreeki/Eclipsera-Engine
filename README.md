@@ -1,7 +1,10 @@
+<img src="/repo/IconNLabelCompressed.svg" width="512"/>
+
 # ECLIPSERA ENGINE
 Eclipsera Engine is a modified version of LunarEngine, designed to include features that the original project currently lacks. This engine is built using ROBLOX's Luau and aims to support the full range of Roblox APIs for game development. and Freedom of Game Development
 
-The project is still in its early stages and actively under development.
+> [!NOTE]
+> The project is still in its early stages and actively under development.
 
 # ❓ Got Question?
 If you got any questions, Feel free to leave it in Discussions! or find your question in this section!
