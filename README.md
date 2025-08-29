@@ -3,11 +3,14 @@
 # ECLIPSERA ENGINE
 Eclipsera Engine is a modified version of [LunarEngine](https://github.com/lunarengine/lunar-test), designed to include features that the original project currently lacks. This engine is built using ROBLOX's Luau and aims to support the full range of Roblox APIs for game development. and Freedom of Game Development
 
+<a href="https://www.buymeacoffee.com/nickibreeki" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 ## **PRONOUNCIATION**
 E-CLIP-SERA EN-GINE, E-CRIP-SERA EN-JIN, E-KRIP-SERRAH EN-JEAN, Yī-kè-lǐ-pǔ-sī-lā Ān-jīn, 伊克利普斯拉 安金
 
 > [!NOTE]
 > The project is still in its early stages and actively under development.
+
 
 # ❓ Got Question?
 If you got any questions, Feel free to leave it in Discussions! or find your question in this section!
