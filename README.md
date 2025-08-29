@@ -14,6 +14,8 @@ For general feedback or suggestions, it is best to leave them in the Discussions
 https://github.com/n1ckibreeki/Eclipsera-Engine/discussions
 
 ---
+## SERVICE AVAILABILITY
+https://github.com/n1ckibreeki/Eclipsera-Engine/wiki/%E2%9A%99-Services-Status
 
 ## Compatibility
 Eclipsera Engine is currently in its demo phase as LunarEngine, implementing a limited but functional subset of its intended API. While it's not feature-complete, it already supports a wide range of basic engine functionality enough to begin experimenting with rendering, scripting, and basic scene construction.
