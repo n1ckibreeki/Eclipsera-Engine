@@ -39,6 +39,9 @@ static std::vector<std::string> gPaths;
 static bool gNoPlace = false;
 static bool args = false;
 
+static double fixedRate = 1.0 / 24.0;
+static double accumulator = 0.0;
+
 static void PhysicsSimulation() {
     // stub
 }
@@ -282,6 +285,21 @@ static void Stage_Run() {
                 rs->PreSimulation->Fire(Lm, lua_gettop(Lm)-1, 2);
                 lua_pop(Lm, 2);
             }
+            if (rs->FixedStep && !rs->FixedStep->IsClosed()) {
+                accumulator += fmin(dt, 0.25);
+                while (accumulator >= fixedRate) {
+                    lua_pushnumber(Lm, fixedRate);
+                    rs->FixedStep->Fire(Lm, lua_gettop(Lm), 1);
+                    lua_pop(Lm, 1);
+                    accumulator -= fixedRate;
+                }
+            }
+            if (rs->PostStep && !rs->PostStep->IsClosed()) {
+                lua_pushnumber(Lm, accumulator / fixedRate);
+                lua_pushnumber(Lm, dt);
+                rs->PostStep->Fire(Lm, lua_gettop(Lm)-1, 2);
+                lua_pop(Lm, 2);
+            }
 
             PhysicsSimulation();
 
@@ -298,7 +316,7 @@ static void Stage_Run() {
         }
         if (g_game && g_game->luaScheduler)
             g_game->luaScheduler->Step(GetTime(), dt);
-
+        
         // Update UserInputService
         // IM ABOUT TO ROTTING AITHGSFODJgmarzsfoidlkzgj;,rsdfplgl;jars.kzf/dkgpksdzl LET ME fUCKING SLEEEP ALREADY
         // WHY I HAVE TO STAY HERE,  ICOMING HERE AND I CHECK THE SIGNAL I CHECK SCHEDULAR I WANT TO FUCKING KILL MYSELF BROOOOOOOOOOOOOOOOOOOOOOOO LET ME GOO

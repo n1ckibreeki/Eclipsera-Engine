@@ -16,6 +16,8 @@ void RunService::EnsureSignals() const {
     if (!self->PreSimulation)  self->PreSimulation  = std::make_shared<RTScriptSignal>(sch);
     if (!self->PostSimulation) self->PostSimulation = std::make_shared<RTScriptSignal>(sch);
     if (!self->Heartbeat)      self->Heartbeat      = std::make_shared<RTScriptSignal>(sch);
+    if (!self->FixedStep)      self->FixedStep      = std::make_shared<RTScriptSignal>(sch);
+    if (!self->PostStep)      self->PostStep      = std::make_shared<RTScriptSignal>(sch);
 }
 
 bool RunService::LuaGet(lua_State* L, const char* key) const {
@@ -27,6 +29,8 @@ bool RunService::LuaGet(lua_State* L, const char* key) const {
     if (std::strcmp(key, "Heartbeat")      == 0) { Lua_PushSignal(L, Heartbeat);      return true; }
     if (std::strcmp(key, "RenderStepped")  == 0) { Lua_PushSignal(L, PreRender);      return true; }
     if (std::strcmp(key, "Stepped")        == 0) { Lua_PushSignal(L, PreSimulation);  return true; }
+    if (std::strcmp(key, "FixedStep")      == 0) { Lua_PushSignal(L, FixedStep);      return true; }
+    if (std::strcmp(key, "PostStep")      == 0) { Lua_PushSignal(L, PostStep);      return true; }
     return false;
 }
 
