@@ -90,7 +90,7 @@ static int LoaderMenu(int padding = 38, int gap = 10,
         }
 
         int creditsY = baseY + optionCount * (boxH + gap) + 40;
-        DrawText("Made by LunarEngine Developers Modified by nickibreeki", padding, creditsY, 20, RED);
+        DrawText("Made by poop Developers Modified by nickibreeki", padding, creditsY, 20, RED);
 
         EndDrawing();
 

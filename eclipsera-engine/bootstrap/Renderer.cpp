@@ -601,7 +601,6 @@ void RenderFrame(Camera3D& camera) {
         BeginTextureMode(gShadowMapCSM[i]);
             ClearBackground(WHITE); // depth cleared by BeginMode3D
             BeginMode3D(lightCam[i]);
-
                 // note: rlGetMatrixModelview/projection gives the matrices raylib used; update our lightVP
                 Matrix lightView = rlGetMatrixModelview();
                 Matrix lightProj = rlGetMatrixProjection();

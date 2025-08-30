@@ -19,6 +19,7 @@
 // Engine datatypes
 #include "core/datatypes/LuaDatatypes.h"
 #include "core/datatypes/Vector3Game.h"
+// #include "core/datatypes/Vector2Game.h"
 #include "core/datatypes/CFrame.h"
 #include "core/datatypes/Color3.h"
 #include "core/datatypes/Random.h"
@@ -222,6 +223,9 @@ static void push_attribute(lua_State* L, const Attribute& a) {
     } else if (std::holds_alternative<::Vector3>(a)) {
         Vector3Game v = Vector3Game::fromRay(std::get<::Vector3>(a));
         lb::push(L, v);
+    // } else if (std::holds_alternative<::Vector2>(a)) {
+    //     Vector2Game v = Vector2Game::fromRay(std::get<::Vector2>(a));
+    //     lb::push(L, v);
     } else if (std::holds_alternative<::Color>(a)) {
         const ::Color c = std::get<::Color>(a);
         lua_createtable(L, 4, 0);
@@ -702,6 +706,7 @@ void RegisterSharedLibreboxAPI(lua_State* L) {
 
     // Engine datatypes
     lb::register_type<Vector3Game>(L);
+    // lb::register_type<Vector2Game>(L);
     lb::register_type<CFrame>(L);
     lb::register_type<Color3>(L);
     lb::register_type<Random>(L);
